@@ -10,7 +10,8 @@ dp = Dispatcher()
 async def main():
     dp.include_router(router)
     await dp.start_polling(bot)
-
+    
+# Точка входа, запуск только этого файла
 if __name__ == '__main__':
     subprocess.run(["python", "sql.py"])
     try:
